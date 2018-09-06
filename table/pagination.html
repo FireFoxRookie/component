@@ -1,0 +1,25 @@
+<div class="pagination">
+  <div class="pagination-jump float-right" v-if="size > 5">
+    <div class="inputNum float-left relative">
+      <label>跳转到:</label>
+      <input type="text" v-model="inputPage"/>
+      <div class="errorTip absolute" :class="{showTip: ishowTip}" v-show="ishowTip">
+        <div class="arrow absolute"></div>
+        <div class="tipTxt relative">非数字</div>
+      </div>
+    </div>
+    <div class="jumpBtn float-left" @click="jump">GO</div>
+  </div>
+  <div class="pagination-num float-right">
+    <div class="pagination-move pointer float-left pagination-pre" v-show="curPage > 1" @click="pre">上一页</div>
+    <div class="pagination-num-wrap float-left" id="paginationNum">
+      <div class="pagination-num-list relative">
+        <div class="float-left pagination-num-item pointer" @click="numClick(index)" :class="{itemhover: curPage !== index, itemActive: curPage === index}" v-for="index in size" v-text="index"></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="pagination-move pointer float-left" v-show="curPage < size" @click="next">下一页</div>
+    <div class="pagination-move pointer float-left" v-show="size > 5 && curPage < size" @click="toLast">末页</div>
+    <div class="clear"></div>
+  </div>
+</div>

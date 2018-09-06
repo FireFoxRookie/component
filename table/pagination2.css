@@ -1,0 +1,230 @@
+.pagination {
+  height: 30px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.clear {
+  display: block;
+  height: 0;
+  content: '';
+  clear:both;
+}
+
+.pagination-num-list {
+  width: 999999999999999px;
+}
+
+.pagination-num-wrap {
+  max-width: 190px;
+  overflow: hidden;
+}
+
+.pagination-num-item {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e3ebee;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.itemhover:hover {
+  color: #00b7f3;
+  border-color: #00b7f3;
+}
+
+.itemActive {
+  background-color: #00b7f3;
+  color: #fff;
+  border-color: #00b7f3;
+}
+
+.pagination-num-item:nth-child(1) {
+  margin-left:0;
+}
+
+.pagination-move {
+  border: 1px solid #e3ebee;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  color: #333;
+  font-size: 14px;
+  margin-left: 10px; 
+}
+
+.pagination-move:hover {
+  border-color: #ccc;
+  color: #222;
+}
+
+.pagination-pre {
+  margin-right: 10px;
+}
+
+.pagination-jump{
+  height: 30px;
+  margin-left: 50px;
+}
+
+.inputNum {
+  height: 30px;
+}
+
+.inputNum>label{
+  display: inline-block;
+  height: 100%;
+  line-height: 30px;
+  color: #999999;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei';
+  vertical-align: text-top;
+}
+
+.inputNum>input {
+  display: inline-block;
+  height: 100%;
+  line-height: 30px;
+  text-indent: 5px;
+  width: 40px;
+  color: #333;
+  fonr-size: 14px;
+  border: 1px solid #e3ebee;
+  border-radius: 3px;
+  vertical-align: text-top;
+}
+
+.jumpBtn {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.jumpBtn:hover{
+  border-color:#ccc;
+}
+
+.tipTxt {
+  font-size: 14px;
+  color: #333;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  transform: rotate(-45deg);
+  left: 24px;
+  top: -4px;
+  z-index: 20;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  background-color: #fff;
+}
+
+.errorTip {
+  left: 46px;
+  top: 40px;
+}
+
+.showTip {
+  animation: showtip 0.5s linear;
+  -webkit-animation: showtip 0.5s linear;
+  -ms-animation: showtip 0.5s linear;
+  -moz-animation: showtip 0.5s linear;
+}
+
+@keyframes showtip {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.5;
+    top: 45px;
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+  }
+}
+
+@-webkit-keyframes showtip {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.5;
+    top: 45px;
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+  }
+}
+
+@-ms-keyframes showtip {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.5;
+    top: 45px;
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+  }
+}
+
+@-moz-keyframes showtip {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.5;
+    top: 45px;
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="fd-select" v-click-outside="clickOutSide">
+  <!-- 添加库 -->
+  <label class="fd-select-label inline-block" v-text="label + ':'"></label>
+  <div class="fd-select-content relative inline-block">
+    <div class="fd-select-input pointer">
+      <input v-model="select.name" type="text" class="float-left" :readonly="isread && !search" :class="{pointer: !isDrop||!search}" @click.stop="showDrop" :placeholder="placeholder"/>
+      <div class="fd-select-input-arrow float-left relative pointer" @click.stop="dropClick">
+        <div class="absolute" :class="{isDrop: isDrop}"></div>
+      </div>
+    </div>
+    <div class="fd-select-list absolute" :class="{'fd-select-list-show': isDrop}">
+      <div class="fd-select-arrow absolute"></div>
+      <ul class="fd-select-ul">
+        <li v-for="(item,index) in optionData" :key="item.code" v-text="item.name" class="pointer ellipsis" :title="item.name" @click.stop="listClick(item.name, item.code)"></li>
+        <li v-show="optionData.length === 0" class="text-align-center">暂无数据</li>
+      </ul>
+    </div>
+  </div>
+</div>

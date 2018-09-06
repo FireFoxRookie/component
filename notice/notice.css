@@ -1,0 +1,55 @@
+.notice {
+  position: fixed;
+  width: 330px;
+  background-color: #fff;
+  right: -400px;
+  top: 24px;
+  background-color: #fff;
+  border-radius: 6px;
+  z-index: 1024;
+  padding: 15px;
+  font-family: 'Microsoft YaHei';
+  transition: all 0.3s ease-out;
+}
+
+.showNotice {
+  right: 16px;
+}
+
+.notice-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.notice-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.notice-text {
+  font-size: 14px;
+  color: #999;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.clear {
+  display: block;
+  content: '';
+  height: 0;
+  clear: both;
+}

@@ -1,0 +1,146 @@
+.inline-block {
+  display: inline-block;
+}
+
+.none{ 
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.fd-select-label {
+  font-size: 14px;
+  color: #666;
+  font-family: "Microsoft YeHei";
+  height: 30px;
+  line-height: 30px;
+  vertical-align: top;
+}
+
+.fd-select-input {
+  height: 30px;
+}
+
+.fd-select-input>input, .fd-select-input>span{
+  height: 100%;
+  width: 130px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  text-indent: 10px;
+}
+
+.fd-select-input>span {
+  line-height: 28px;
+}
+
+.fd-select-input-arrow {
+  height: 100%;
+  width: 30px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.fd-select-input-arrow>div {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-left: 0;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  transform-origin: 75% 75%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transition: transform 0.3s linear;
+}
+
+.fd-select-input-arrow .isDrop {
+  transform: rotate(225deg);
+}
+
+.fd-select-list {
+  background-color: #fff;
+  display: none;
+  padding: 10px;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px 1px #efefef;
+  border-radius: 6px;
+}
+
+.fd-select-list-show {
+  display: block;
+}
+
+.fd-select-arrow {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotae(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  z-index: 20;
+  left: 50%;
+  margin-left: -5px;
+  top: -4px;
+}
+
+.fd-select-ul {
+  font-family: 'Microsoft YaHei';
+  border-radius: 3px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.fd-select-ul>li {
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  line-height: 20px;
+  color: #999;
+}
+
+.fd-select-ul>li:hover {
+  background-color: #4ba7fe;
+  color: #fff;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-align-center {
+  text-align: center;
+}

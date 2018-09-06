@@ -1,0 +1,9 @@
+<div class="notice" :class="{showNotice: isShow}" >
+  <div class="notice-top">
+    <img class="notice-icon block float-left" :src="iconUrl" />
+    <span class="notice-title block float-left" v-text="title"></span>
+    <img class="notice-close block float-right pointer" src="../images/icon-close.png" @click="close"/>
+    <div class="clear"></div>
+  </div>
+  <div class="notice-text" v-text="text"></div>
+</div>
